@@ -2,10 +2,10 @@ import hashlib
 import sys
 
 paths = []
+hashs = []
 if sys.argv[1:] != []:
     paths = sys.argv[1:] # DDされた全ファイルをpathsに格納
-
-hashs = []
+    paths.sort()
 
 if(paths==[]):
     print('元ファイルをD&Dしてください')
